@@ -24,9 +24,12 @@ struct LearningApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
+        WindowGroup{
+            NavigationStack {
+                VStack {
+                    NavigationLink("Content View") { ContentView()}
+                    NavigationLink("Notification"){NotificationView()}
+                }
+            }}
     }
 }
