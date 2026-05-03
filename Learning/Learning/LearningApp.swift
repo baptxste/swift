@@ -30,6 +30,6 @@ struct LearningApp: App {
                     NavigationLink("Content View") { ContentView()}
                     NavigationLink("Notification"){NotificationView()}
                 }
-            }}
+            }}.modelContainer(sharedModelContainer)
     }
 }
