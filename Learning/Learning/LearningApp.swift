@@ -29,6 +29,7 @@ struct LearningApp: App {
                 VStack {
                     NavigationLink("Content View") { ContentView()}
                     NavigationLink("Notification"){NotificationView()}
+                    NavigationLink("test storyboard"){story()}
                 }
             }}.modelContainer(sharedModelContainer)
     }
